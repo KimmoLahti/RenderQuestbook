@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Simple Webpage</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<style>
+		
+		@keyframes bounce {
+		  0% {
+		    transform: translateY(0);
+		  }
+		  50% {
+		    transform: translateY(-20px);
+		  }
+		  100% {
+		    transform: translateY(0);
+		  }
+		}
+
+		.navbar-brand {
+		  animation: bounce 1s infinite;
+		}
+
+		@keyframes rainbow {
+			0% {
+				color: red;
+			}
+			16.67% {
+				color: orange;
+			}
+			33.33% {
+				color: yellow;
+			}
+			50% {
+				color: green;
+			}
+			66.67% {
+				color: blue;
+			}
+			83.33% {
+				color: indigo;
+			}
+			100% {
+				color: violet;
+			}
+		}
+		
+		.animate {
+			animation: rainbow 5s infinite;
+		}
+		img {
+    position: relative;
+    animation: move 5s infinite alternate ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 800px); 
+    }
+}
+	</style>
+
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="/">Home 🏠</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="/questbook">Questbook</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/newmessage">New message</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/ajaxmessage">Ajax message</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="container mt-5">
+		<h1>Home</h1>
+		<p class="animate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet justo quis libero malesuada, a commodo nulla commodo. Pellentesque malesuada nisl nec leo aliquam commodo. Sed id consequat ipsum. Nullam volutpat euismod est, id interdum nunc mattis quis. Fusce euismod nunc vitae quam commodo, nec hendrerit tortor imperdiet. Donec eu tellus ac justo aliquet consectetur. Nam porttitor leo in massa pulvinar, nec ultrices lorem varius. Fusce ultricies nisi vitae tortor sagittis, sit amet feugiat nulla mollis. In sed justo nisl. Sed lobortis blandit lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Integer sit amet pretium nunc.</p>
+		<img src="https://www.lifegate.com/app/uploads/mare-fa-bene-2.jpg" alt="A beautiful view of the sea" class="img-fluid my-3">
+		
+		<p class="animate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet justo quis libero malesuada, a commodo nulla commodo. Pellentesque malesuada nisl nec leo aliquam commodo. Sed id consequat ipsum. Nullam volutpat euismod est, id interdum nunc mattis quis. Fusce euismod nunc vitae quam commodo, nec hendrerit tortor imperdiet. Donec eu tellus ac justo aliquet consectetur. Nam porttitor leo in massa pulvinar, nec ultrices lorem varius. Fusce ultricies nisi vitae tortor sagittis, sit amet feugiat nulla mollis. In sed justo nisl. Sed lobortis blandit lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Integer sit amet pretium nunc.</
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

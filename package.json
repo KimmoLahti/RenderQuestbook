@@ -1,0 +1,17 @@
+{
+  "name": "rendervalmis",
+  "version": "1.0.0",
+  "description": "Valmis Questbook app",
+  "main": "expresssivu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node expresssivu.js"
+  },
+  "keywords": [
+    "render",
+    "questbook",
+    "valmis"
+  ],
+  "author": "Kimmo Lahtinen",
+  "license": "ISC"
+}
